@@ -14,7 +14,7 @@ struct Employee {
 int main() {
     int n, i;
 
-    printf("Enter number of employees: ");
+    printf("Enter number of employees:\n ");
     scanf("%d", &n);
 
     struct Employee emp[n];
@@ -22,13 +22,13 @@ int main() {
     for(i = 0; i < n; i++) {
         printf("\n--- Enter details for Employee %d ---\n", i + 1);
 
-        printf("Enter ID: ");
+        printf("Enter ID:\n ");
         scanf("%d", &emp[i].id);
 
-        printf("Enter Name: ");
+        printf("Enter Name:\n ");
         scanf("%s", emp[i].name);
 
-        printf("Enter Basic Salary: ");
+        printf("Enter Basic Salary:\n ");
         scanf("%f", &emp[i].basicSalary);
 
         // Allowances
