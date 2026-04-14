@@ -16,6 +16,8 @@ struct Employee
 
 int main()
 {
+     setbuf(stdout, NULL);
+
     int n, i;
     char buffer[100];
 
