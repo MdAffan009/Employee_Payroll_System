@@ -5,10 +5,10 @@ WORKDIR /app
 
 COPY . .
 
-RUN apk add --no-cache build-base && gcc employeePayrollSystem.c -o main
+RUN apk add --no-cache build-base && gcc --static employeePayrollSystem.c -o main
 
 #Deploy
-FROM alpine:latest	
+FROM scratch	
 
 WORKDIR /app
 
