@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN apk add --no-cache build-base && gcc --static employeePayrollSystem.c -o main
+RUN apk add --no-cache build-base && gcc --static main.c -o main
 
 #Deploy
 FROM scratch	
